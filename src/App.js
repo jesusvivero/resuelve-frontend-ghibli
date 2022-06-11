@@ -1,5 +1,4 @@
-import React from 'react';
-import 'bootswatch/dist/lux/bootstrap.min.css'; // Estilos
+import React, { Fragment } from 'react';
 //
 import List from './components/list';
 
@@ -7,13 +6,17 @@ import List from './components/list';
 
 function App() {
   return (
-    <>
+    <Fragment>
       <nav className="navbar navbar-dark bg-dark border-bottom border-white">
         <a className="navbar-brand" href="/">Ghibli Studios</a>
       </nav>
 
-      <List />
-    </>
+      <main>
+        <div className="container">
+          <List />
+        </div>
+      </main>
+    </Fragment>
   );
 }
 
